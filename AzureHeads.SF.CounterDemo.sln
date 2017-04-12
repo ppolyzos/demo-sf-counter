@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "AzureHeads.SF.CounterDemo", "AzureHeads.SF.CounterDemo\AzureHeads.SF.CounterDemo.sfproj", "{F8F9CE74-3CC9-4E73-A8A2-D423AAD09CA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatelessCounterService", "StatelessCounterService\StatelessCounterService.csproj", "{F109B910-7C94-43F7-858D-F4617217A0A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8F9CE74-3CC9-4E73-A8A2-D423AAD09CA9}.Debug|x64.ActiveCfg = Debug|x64
+		{F8F9CE74-3CC9-4E73-A8A2-D423AAD09CA9}.Debug|x64.Build.0 = Debug|x64
+		{F8F9CE74-3CC9-4E73-A8A2-D423AAD09CA9}.Debug|x64.Deploy.0 = Debug|x64
+		{F8F9CE74-3CC9-4E73-A8A2-D423AAD09CA9}.Release|x64.ActiveCfg = Release|x64
+		{F8F9CE74-3CC9-4E73-A8A2-D423AAD09CA9}.Release|x64.Build.0 = Release|x64
+		{F8F9CE74-3CC9-4E73-A8A2-D423AAD09CA9}.Release|x64.Deploy.0 = Release|x64
+		{F109B910-7C94-43F7-858D-F4617217A0A9}.Debug|x64.ActiveCfg = Debug|x64
+		{F109B910-7C94-43F7-858D-F4617217A0A9}.Debug|x64.Build.0 = Debug|x64
+		{F109B910-7C94-43F7-858D-F4617217A0A9}.Release|x64.ActiveCfg = Release|x64
+		{F109B910-7C94-43F7-858D-F4617217A0A9}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
