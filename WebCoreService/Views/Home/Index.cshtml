@@ -6,7 +6,7 @@
     <div class="calorie-counter__title">Counter</div>
     <div class="calorie-counter__date">Stateless Service</div>
 
-    <div class="chart chart--calorie js-chart" data-goal="600" data-count="0">
+    <div class="chart chart--calorie js-chart" data-goal="300" data-count="0">
         <div class="chart__container">
 
             <svg class="chart__background" x="0px" y="0px" height="220px" viewBox="0 0 220 220">
@@ -24,9 +24,9 @@
 
         <div class="chart__count">
             <div>
-                <span class="js-count" data-count="0">0</span> / <span class="js-count" data-count="600">600</span>
+                <span class="js-count" data-count="0">0</span> / <span class="js-count" data-count="300">300</span>
             </div>
-            Your goal
+            stateless
         </div>
     </div>
 
@@ -37,7 +37,7 @@
             Running
         </div>
         <div class="calorie__count__consumed">
-            <span class="js-count" data-count="0">0</span> Clicked
+            <span class="js-count total" data-count="0">0</span> Total
         </div>
     </div>
 
@@ -47,7 +47,7 @@
     <div class="calorie-counter__title">Counter</div>
     <div class="calorie-counter__date">Stateful Service</div>
 
-    <div class="chart chart--calorie js-chart" data-goal="600" data-count="0">
+    <div class="chart chart--calorie js-chart" data-goal="300" data-count="0">
         <div class="chart__container">
 
             <svg class="chart__background" x="0px" y="0px" height="220px" viewBox="0 0 220 220">
@@ -65,9 +65,9 @@
 
         <div class="chart__count">
             <div>
-                <span class="js-count" data-count="0">0</span> / <span class="js-count" data-count="600">600</span>
+                <span class="js-count" data-count="0">0</span> / <span class="js-count" data-count="300">300</span>
             </div>
-            Your goal
+            stateful
         </div>
     </div>
 
@@ -78,8 +78,27 @@
         </div>
 
         <div class="calorie__count__consumed">
-            <span class="js-count" data-count="0">0</span> Clicked
+            <span class="js-count total" data-count="0">0</span> Totals
         </div>
     </div>
 
 </div>
+
+@section Scripts
+{
+    <script type="text/javascript">
+        (function ($) {
+
+            setInterval(() => {
+                $.get('api/stateless', (data) => {
+                    updateCounter('stateless', data);
+                });
+
+                $.get('api/stateful', (data) => {
+                    updateCounter('stateful', data);
+                });
+            }, 500);
+
+        })(jQuery);
+    </script>
+}
