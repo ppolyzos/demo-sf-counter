@@ -32,6 +32,7 @@
   <ItemGroup>
     <ProjectReference Include="..\StatefulCounterService\StatefulCounterService.csproj" />
     <ProjectReference Include="..\StatelessCounterService\StatelessCounterService.csproj" />
+    <ProjectReference Include="..\WebCoreService\WebCoreService.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <PropertyGroup>

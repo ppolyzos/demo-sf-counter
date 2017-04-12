@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="stateless" class="calorie-counter" style="left: 30%">
+    <div class="calorie-counter__title">Counter</div>
+    <div class="calorie-counter__date">Stateless Service</div>
+
+    <div class="chart chart--calorie js-chart" data-goal="600" data-count="0">
+        <div class="chart__container">
+
+            <svg class="chart__background" x="0px" y="0px" height="220px" viewBox="0 0 220 220">
+                <g>
+                    <path d="M110,210c-55.1,0-100-44.9-100-100C10,54.9,54.9,10,110,10s100,44.9,100,100C210,165.1,165.1,210,110,210z" />
+                </g>
+            </svg>
+            <svg class="chart__foreground" x="0px" y="0px" height="220px" viewBox="0 0 220 220">
+                <g>
+                    <path d="M110,210c-55.1,0-100-44.9-100-100C10,54.9,54.9,10,110,10s100,44.9,100,100C210,165.1,165.1,210,110,210z" />
+                </g>
+            </svg>
+
+        </div>
+
+        <div class="chart__count">
+            <div>
+                <span class="js-count" data-count="0">0</span> / <span class="js-count" data-count="600">600</span>
+            </div>
+            Your goal
+        </div>
+    </div>
+
+    <div class="calorie__count">
+        <div class="calorie__count__remaining">
+            <span class="js-count node">Node</span>
+            <!-- /.js-count -->
+            Running
+        </div>
+        <div class="calorie__count__consumed">
+            <span class="js-count" data-count="0">0</span> Clicked
+        </div>
+    </div>
+
+</div>
+
+<div id="stateful" class="calorie-counter" style="left: 70%">
+    <div class="calorie-counter__title">Counter</div>
+    <div class="calorie-counter__date">Stateful Service</div>
+
+    <div class="chart chart--calorie js-chart" data-goal="600" data-count="0">
+        <div class="chart__container">
+
+            <svg class="chart__background" x="0px" y="0px" height="220px" viewBox="0 0 220 220">
+                <g>
+                    <path d="M110,210c-55.1,0-100-44.9-100-100C10,54.9,54.9,10,110,10s100,44.9,100,100C210,165.1,165.1,210,110,210z" />
+                </g>
+            </svg>
+            <svg class="chart__foreground" x="0px" y="0px" height="220px" viewBox="0 0 220 220">
+                <g>
+                    <path d="M110,210c-55.1,0-100-44.9-100-100C10,54.9,54.9,10,110,10s100,44.9,100,100C210,165.1,165.1,210,110,210z" />
+                </g>
+            </svg>
+
+        </div>
+
+        <div class="chart__count">
+            <div>
+                <span class="js-count" data-count="0">0</span> / <span class="js-count" data-count="600">600</span>
+            </div>
+            Your goal
+        </div>
+    </div>
+
+    <div class="calorie__count">
+        <div class="calorie__count__remaining">
+            <span class="js-count node">Node</span>
+            Running
+        </div>
+
+        <div class="calorie__count__consumed">
+            <span class="js-count" data-count="0">0</span> Clicked
+        </div>
+    </div>
+
+</div>

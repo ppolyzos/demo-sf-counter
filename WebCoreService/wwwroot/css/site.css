@@ -1,0 +1,188 @@
+﻿/**
+   Coded by /u/j0be in scss.
+   See scss source here -> http://codepen.io/j0be/pen/MKRVyN
+*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    background: -webkit-linear-gradient(-45deg, #fffe99, #b6feb7);
+    background: linear-gradient(-45deg, #fffe99, #b6feb7);
+}
+
+.calorie-counter {
+    background: -webkit-linear-gradient(top left, #4d4d4d, #000);
+    background: linear-gradient(to bottom right, #4d4d4d, #000);
+    animation: load 1s ease-out forwards;
+    transform: translate3d(-50%, -40%, 0);
+    background-color: #4d4d4d;
+    border-radius: 4px;
+    box-shadow: 36px 36px 76px 0px rgba(0, 0, 0, 0.26), 36px 36px 136px 0px #0b2b08;
+    color: #fff;
+    height: 540px;
+    font-family: "proxima-nova-soft", sans-serif;
+    font-weight: 500;
+    left: 50%;
+    opacity: 0;
+    padding: 38px 46px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 400px;
+}
+
+.calorie-counter__title {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.calorie-counter__date {
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+.chart svg {
+    height: 100%;
+    width: 100%;
+}
+
+.chart__background {
+    fill: none;
+    height: 100%;
+    position: relative;
+    stroke: #5a5a59;
+    stroke-width: 20px;
+    width: 100%;
+}
+
+.chart__foreground {
+    transform: rotate(180deg);
+    transition: stroke-dashoffset 1s ease-in;
+    fill: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    stroke-dasharray: 630px;
+    stroke-dashoffset: 630px;
+    stroke-linecap: round;
+    stroke-width: 20px;
+    stroke: #b6feb7;
+    top: 0;
+    width: 100%;
+}
+
+.chart__count {
+    color: #999;
+    font-size: 16px;
+    position: relative;
+}
+
+.chart__count div {
+    color: #fff;
+    font-size: 22px;
+}
+
+.chart .chart__container {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.chart--calorie .chart__container {
+    height: 220px;
+    width: 220px;
+}
+
+.chart--calorie .chart__count {
+    top: -135px;
+}
+
+.calorie__count {
+    background-color: #b584ff;
+    padding: 23px;
+}
+
+.calorie__count__consumed,
+.calorie__count__remaining {
+    font-size: 16px;
+}
+
+.calorie__count__consumed span,
+.calorie__count__remaining span {
+    display: block;
+    font-size: 22px;
+}
+
+.calorie__count__consumed {
+    overflow: hidden;
+}
+
+.calorie__count__remaining {
+    background-color: #fff;
+    box-shadow: 19px 19px 49px 0px rgba(0, 0, 0, 0.36);
+    color: #4d4d4d;
+    float: right;
+    padding: 24px;
+    position: relative;
+    right: -15px;
+    top: -35px;
+    width: 60%;
+}
+
+@-webkit-keyframes load {
+    from {
+        -webkit-transform: translate3d(-50%, -40%, 0);
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: translate3d(-50%, -50%, 0);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes load {
+    from {
+        -moz-transform: translate3d(-50%, -40%, 0);
+        opacity: 0;
+    }
+
+    to {
+        -moz-transform: translate3d(-50%, -50%, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes load {
+    from {
+        -webkit-transform: translate3d(-50%, -40%, 0);
+        -moz-transform: translate3d(-50%, -40%, 0);
+        -ms-transform: translate3d(-50%, -40%, 0);
+        -o-transform: translate3d(-50%, -40%, 0);
+        transform: translate3d(-50%, -40%, 0);
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: translate3d(-50%, -50%, 0);
+        -moz-transform: translate3d(-50%, -50%, 0);
+        -ms-transform: translate3d(-50%, -50%, 0);
+        -o-transform: translate3d(-50%, -50%, 0);
+        transform: translate3d(-50%, -50%, 0);
+        opacity: 1;
+    }
+}
