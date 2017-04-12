@@ -63,7 +63,7 @@ namespace StatefulCounterService.Services
                     await tx.CommitAsync();
                 }
 
-                await Task.Delay(TimeSpan.FromSeconds(1), cancellationToken);
+                await Task.Delay(TimeSpan.FromSeconds(0.5), cancellationToken);
             }
         }
 
