@@ -22,9 +22,9 @@ namespace StatelessCounterService
                 // an instance of the class is created in this host process.
 
                 ServiceRuntime.RegisterServiceAsync("StatelessCounterServiceType",
-                    context => new StatelessCounterService(context)).GetAwaiter().GetResult();
+                    context => new Services.StatelessCounterService(context)).GetAwaiter().GetResult();
 
-                ServiceEventSource.Current.ServiceTypeRegistered(Process.GetCurrentProcess().Id, typeof(StatelessCounterService).Name);
+                ServiceEventSource.Current.ServiceTypeRegistered(Process.GetCurrentProcess().Id, typeof(Services.StatelessCounterService).Name);
 
                 // Prevents this host process from terminating so services keep running.
                 Thread.Sleep(Timeout.Infinite);
