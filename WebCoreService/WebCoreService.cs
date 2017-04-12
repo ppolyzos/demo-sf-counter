@@ -44,6 +44,7 @@ namespace WebCoreService
                         return new WebHostBuilder().UseWebListener()
                                     .ConfigureServices(
                                         services => services
+                                            .AddSingleton<FabricClient>(new FabricClient())
                                             .AddSingleton<ConfigSettings>(new ConfigSettings(serviceContext))
                                             .AddSingleton<StatelessServiceContext>(serviceContext))
                                     .UseContentRoot(Directory.GetCurrentDirectory())
