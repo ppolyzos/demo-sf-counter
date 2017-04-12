@@ -7,6 +7,8 @@ Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "AzureHeads.SF.CounterDemo",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatelessCounterService", "StatelessCounterService\StatelessCounterService.csproj", "{F109B910-7C94-43F7-858D-F4617217A0A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatefulCounterService", "StatefulCounterService\StatefulCounterService.csproj", "{A47553A0-9ABC-497C-9154-F6A4533ADFE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -23,6 +25,10 @@ Global
 		{F109B910-7C94-43F7-858D-F4617217A0A9}.Debug|x64.Build.0 = Debug|x64
 		{F109B910-7C94-43F7-858D-F4617217A0A9}.Release|x64.ActiveCfg = Release|x64
 		{F109B910-7C94-43F7-858D-F4617217A0A9}.Release|x64.Build.0 = Release|x64
+		{A47553A0-9ABC-497C-9154-F6A4533ADFE2}.Debug|x64.ActiveCfg = Debug|x64
+		{A47553A0-9ABC-497C-9154-F6A4533ADFE2}.Debug|x64.Build.0 = Debug|x64
+		{A47553A0-9ABC-497C-9154-F6A4533ADFE2}.Release|x64.ActiveCfg = Release|x64
+		{A47553A0-9ABC-497C-9154-F6A4533ADFE2}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
